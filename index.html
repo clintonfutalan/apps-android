@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>App Store</title>
+
+    <meta
+        name="description"
+        content="Browse and download Android applications."
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="navbar-container">
+
+
+            <!-- LOGO -->
+
+            <a href="#" class="brand">
+
+                <div class="brand-icon">
+                    A
+                </div>
+
+                <span>
+                    App Store
+                </span>
+
+            </a>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-wrapper">
+
+                <span class="search-icon">
+                    ⌕
+                </span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search apps..."
+                >
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="nav-links">
+
+                <a
+                    href="#apps"
+                    class="active"
+                >
+                    Apps
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+            </nav>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="hero-container">
+
+                <div>
+
+                    <span class="hero-label">
+                        ANDROID APPLICATIONS
+                    </span>
+
+                    <h1>
+                        Discover our apps
+                    </h1>
+
+                    <p>
+                        Browse, explore, and download Android
+                        applications from our collection.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CATEGORY FILTER
+        ========================== -->
+
+        <section class="categories">
+
+            <div class="container">
+
+                <div class="category-list">
+
+                    <button
+                        class="category active"
+                        data-category="all"
+                    >
+                        All Apps
+                    </button>
+
+                    <button
+                        class="category"
+                        data-category="business"
+                    >
+                        Business
+                    </button>
+
+                    <button
+                        class="category"
+                        data-category="productivity"
+                    >
+                        Productivity
+                    </button>
+
+                    <button
+                        class="category"
+                        data-category="utility"
+                    >
+                        Utilities
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             APPS
+        ========================== -->
+
+        <section
+            class="apps-section"
+            id="apps"
+        >
+
+            <div class="container">
+
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            All Apps
+                        </h2>
+
+                        <p>
+                            Explore available applications
+                        </p>
+
+                    </div>
+
+
+                    <span
+                        class="app-count"
+                        id="appCount"
+                    >
+                        1 app
+                    </span>
+
+                </div>
+
+
+
+                <!-- =========================
+                     APP GRID
+                ========================== -->
+
+                <div
+                    class="app-grid"
+                    id="appGrid"
+                >
+
+
+                    <!-- =========================
+                         RESTAURANT POS
+                    ========================== -->
+
+                    <article
+                        class="app-card"
+                        data-category="business"
+                        data-name="Restaurant POS"
+                    >
+
+                        <div class="app-card-top">
+
+
+                            <!-- APP ICON -->
+
+                            <div class="app-icon">
+
+                                <img
+                                    src="logo/logo.png"
+                                    alt="Restaurant POS icon"
+                                >
+
+                            </div>
+
+                            <!-- APP INFORMATION -->
+
+                            <div class="app-info">
+
+                                <h3>
+                                    POS
+                                </h3>
+
+                                <p class="developer">
+                                    Sir Elbert
+                                </p>
+
+                                <p class="app-description">
+                                    A complete point-of-sale system
+                                    designed for restaurants, including
+                                    products, orders, inventory, reports,
+                                    and sales management.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- APP DETAILS -->
+
+                        <div class="app-details">
+
+                            <span>
+                                Version 1.0.0
+                            </span>
+
+                            <span>
+                                Android 8.0+
+                            </span>
+
+                            <span>
+                                APK
+                            </span>
+
+                        </div>
+
+
+                        <!-- DOWNLOAD -->
+
+                        <div class="app-card-footer">
+
+                            <a
+                                href="Pos.apk"
+                                class="download-button"
+                                download="Pos.apk"
+                            >
+                                Download
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- =========================
+                     NO RESULTS
+                ========================== -->
+
+                <div
+                    class="no-results"
+                    id="noResults"
+                >
+
+                    <div class="no-results-icon">
+                        🔍
+                    </div>
+
+                    <h3>
+                        No apps found
+                    </h3>
+
+                    <p>
+                        Try searching for another application.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section
+            class="about-section"
+            id="about"
+        >
+
+            <div class="container">
+
+                <div class="about-content">
+
+                    <span class="hero-label">
+                        ABOUT
+                    </span>
+
+                    <h2>
+                        Our application collection
+                    </h2>
+
+                    <p>
+                        This platform provides a simple and
+                        convenient way to browse and download
+                        our Android applications.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <span>
+                    © 2026 App Store
+                </span>
+
+                <span>
+                    Android Applications
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================
+         SEARCH / FILTER
+    ========================== -->
+
+    <script>
+
+        const searchInput =
+            document.getElementById("searchInput");
+
+        const appCards =
+            document.querySelectorAll(".app-card");
+
+        const categories =
+            document.querySelectorAll(".category");
+
+        const noResults =
+            document.getElementById("noResults");
+
+        const appCount =
+            document.getElementById("appCount");
+
+
+        let selectedCategory = "all";
+
+
+        function filterApps() {
+
+            const search =
+                searchInput.value
+                    .toLowerCase()
+                    .trim();
+
+
+            let visibleCount = 0;
+
+
+            appCards.forEach(card => {
+
+                const name =
+                    card.dataset.name.toLowerCase();
+
+                const category =
+                    card.dataset.category.toLowerCase();
+
+
+                const matchesSearch =
+                    name.includes(search);
+
+
+                const matchesCategory =
+                    selectedCategory === "all" ||
+                    category === selectedCategory;
+
+
+                if (
+                    matchesSearch &&
+                    matchesCategory
+                ) {
+
+                    card.style.display = "flex";
+
+                    visibleCount++;
+
+                } else {
+
+                    card.style.display = "none";
+
+                }
+
+            });
+
+
+            appCount.textContent =
+                visibleCount +
+                (visibleCount === 1
+                    ? " app"
+                    : " apps");
+
+
+            if (visibleCount === 0) {
+
+                noResults.style.display = "block";
+
+            } else {
+
+                noResults.style.display = "none";
+
+            }
+
+        }
+
+
+        searchInput.addEventListener(
+            "input",
+            filterApps
+        );
+
+
+        categories.forEach(button => {
+
+            button.addEventListener(
+                "click",
+                () => {
+
+                    categories.forEach(item => {
+
+                        item.classList.remove(
+                            "active"
+                        );
+
+                    });
+
+
+                    button.classList.add(
+                        "active"
+                    );
+
+
+                    selectedCategory =
+                        button.dataset.category;
+
+
+                    filterApps();
+
+                }
+            );
+
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>

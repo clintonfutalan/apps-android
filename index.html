@@ -2,143 +2,73 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>App Store</title>
+    <title>App Store | Android Applications</title>
 
     <meta
         name="description"
-        content="Browse and download Android applications."
+        content="Browse and download Android applications, including Restaurant POS and PRMS."
     >
 
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
-
-    <!-- =========================
-         NAVBAR
-    ========================== -->
-
+    <!-- NAVBAR -->
     <header class="navbar">
-
         <div class="navbar-container">
 
-
-            <!-- LOGO -->
-
             <a href="#" class="brand">
-
-                <div class="brand-icon">
-                    A
-                </div>
-
-                <span>
-                    App Store
-                </span>
-
+                <div class="brand-icon">A</div>
+                <span>App Store</span>
             </a>
 
-
             <!-- SEARCH -->
-
             <div class="search-wrapper">
-
-                <span class="search-icon">
-                    ⌕
-                </span>
+                <span class="search-icon">⌕</span>
 
                 <input
                     type="text"
                     id="searchInput"
                     placeholder="Search apps..."
+                    aria-label="Search applications"
                 >
-
             </div>
 
-
             <!-- NAVIGATION -->
-
             <nav class="nav-links">
-
-                <a
-                    href="#apps"
-                    class="active"
-                >
-                    Apps
-                </a>
-
-                <a href="#about">
-                    About
-                </a>
-
+                <a href="#apps" class="active">Apps</a>
+                <a href="#about">About</a>
             </nav>
 
-
         </div>
-
     </header>
-
-
-
-    <!-- =========================
-         MAIN
-    ========================== -->
 
     <main>
 
-
-        <!-- =========================
-             HERO
-        ========================== -->
-
+        <!-- HERO -->
         <section class="hero">
-
             <div class="hero-container">
 
-                <div>
+                <span class="hero-label">ANDROID APPLICATIONS</span>
 
-                    <span class="hero-label">
-                        ANDROID APPLICATIONS
-                    </span>
+                <h1>Discover our apps</h1>
 
-                    <h1>
-                        Discover our apps
-                    </h1>
-
-                    <p>
-                        Browse, explore, and download Android
-                        applications from our collection.
-                    </p>
-
-                </div>
+                <p>
+                    Browse, explore, and download Android
+                    applications from our collection.
+                </p>
 
             </div>
-
         </section>
 
-
-
-        <!-- =========================
-             CATEGORY FILTER
-        ========================== -->
-
+        <!-- CATEGORY FILTER -->
         <section class="categories">
-
             <div class="container">
-
                 <div class="category-list">
 
                     <button
@@ -170,132 +100,71 @@
                     </button>
 
                 </div>
-
             </div>
-
         </section>
 
-
-
-        <!-- =========================
-             APPS
-        ========================== -->
-
-        <section
-            class="apps-section"
-            id="apps"
-        >
-
+        <!-- APPS SECTION -->
+        <section class="apps-section" id="apps">
             <div class="container">
 
-
                 <div class="section-header">
-
                     <div>
+                        <h2 id="sectionTitle">All Apps</h2>
 
-                        <h2>
-                            All Apps
-                        </h2>
-
-                        <p>
+                        <p id="sectionDescription">
                             Explore available applications
                         </p>
-
                     </div>
 
-
-                    <span
-                        class="app-count"
-                        id="appCount"
-                    >
-                        1 app
+                    <span class="app-count" id="appCount">
+                        2 apps
                     </span>
-
                 </div>
 
+                <!-- APP GRID -->
+                <div class="app-grid" id="appGrid">
 
-
-                <!-- =========================
-                     APP GRID
-                ========================== -->
-
-                <div
-                    class="app-grid"
-                    id="appGrid"
-                >
-
-
-                    <!-- =========================
-                         RESTAURANT POS
-                    ========================== -->
-
+                    <!-- RESTAURANT POS -->
                     <article
                         class="app-card"
                         data-category="business"
                         data-name="Restaurant POS"
+                        data-search="restaurant pos point of sale sales inventory products orders reports cashier restaurant management"
                     >
 
                         <div class="app-card-top">
 
-
-                            <!-- APP ICON -->
-
                             <div class="app-icon">
-
                                 <img
                                     src="logo/logo.png"
-                                    alt="Restaurant POS icon"
+                                    alt="Restaurant POS app icon"
+                                    loading="lazy"
                                 >
-
                             </div>
 
-                            <!-- APP INFORMATION -->
-
                             <div class="app-info">
-
-                                <h3>
-                                    POS
-                                </h3>
+                                <h3>Restaurant POS</h3>
 
                                 <p class="developer">
                                     Sir Elbert
                                 </p>
 
                                 <p class="app-description">
-                                    A complete point-of-sale system
-                                    designed for restaurants, including
-                                    products, orders, inventory, reports,
-                                    and sales management.
+                                    A restaurant point-of-sale system
+                                    featuring product management, sales,
+                                    orders, inventory, and reports.
                                 </p>
-
                             </div>
 
                         </div>
 
-
-                        <!-- APP DETAILS -->
-
                         <div class="app-details">
-
-                            <span>
-                                Version 1.0.0
-                            </span>
-
-                            <span>
-                                Android 8.0+
-                            </span>
-
-                            <span>
-                                APK
-                            </span>
-
+                            <span>Version 1.0.0</span>
+                            <span>Android 8.0+</span>
+                            <span>APK</span>
                         </div>
 
-
-                        <!-- DOWNLOAD -->
-
                         <div class="app-card-footer">
-
                             <a
                                 href="Pos.apk"
                                 class="download-button"
@@ -303,242 +172,211 @@
                             >
                                 Download
                             </a>
-
                         </div>
 
                     </article>
 
+                    <!-- PRMS -->
+                    <article
+                        class="app-card"
+                        data-category="business"
+                        data-name="PRMS"
+                        data-search="prms patient record management system patient records appointments healthcare medical consultation diagnosis treatment"
+                    >
+
+                        <div class="app-card-top">
+
+                            <div class="app-icon">
+                                <img
+                                    src="logo/logo.png"
+                                    alt="PRMS app icon"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <div class="app-info">
+                                <h3>PRMS</h3>
+
+                                <p class="developer">
+                                    Sir Elbert
+                                </p>
+
+                                <p class="app-description">
+                                    A patient records management system
+                                    designed to help organize patient
+                                    information, appointments, and
+                                    healthcare records.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="app-details">
+                            <span>Version 1.0.0</span>
+                            <span>Android 8.0+</span>
+                            <span>APK</span>
+                        </div>
+
+                        <div class="app-card-footer">
+                            <a
+                                href="Prms.apk"
+                                class="download-button"
+                                download="Prms.apk"
+                            >
+                                Download
+                            </a>
+                        </div>
+
+                    </article>
 
                 </div>
 
+                <!-- NO RESULTS -->
+                <div class="no-results" id="noResults">
+                    <div class="no-results-icon">🔍</div>
 
-                <!-- =========================
-                     NO RESULTS
-                ========================== -->
-
-                <div
-                    class="no-results"
-                    id="noResults"
-                >
-
-                    <div class="no-results-icon">
-                        🔍
-                    </div>
-
-                    <h3>
-                        No apps found
-                    </h3>
+                    <h3>No apps found</h3>
 
                     <p>
-                        Try searching for another application.
+                        Try another search term or select a
+                        different category.
                     </p>
-
                 </div>
 
-
             </div>
-
         </section>
 
-
-
-        <!-- =========================
-             ABOUT
-        ========================== -->
-
-        <section
-            class="about-section"
-            id="about"
-        >
-
+        <!-- ABOUT -->
+        <section class="about-section" id="about">
             <div class="container">
 
                 <div class="about-content">
+                    <span class="hero-label">ABOUT</span>
 
-                    <span class="hero-label">
-                        ABOUT
-                    </span>
-
-                    <h2>
-                        Our application collection
-                    </h2>
+                    <h2>Our application collection</h2>
 
                     <p>
                         This platform provides a simple and
                         convenient way to browse and download
-                        our Android applications.
+                        our Android applications. Explore our
+                        available tools and choose the application
+                        that suits your needs.
                     </p>
-
                 </div>
 
             </div>
-
         </section>
-
 
     </main>
 
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
+    <!-- FOOTER -->
     <footer>
-
         <div class="container">
-
             <div class="footer-content">
 
-                <span>
-                    © 2026 App Store
-                </span>
+                <span>© 2026 App Store</span>
 
-                <span>
-                    Android Applications
-                </span>
+                <span>Android Applications</span>
 
             </div>
-
         </div>
-
     </footer>
 
-
-
-    <!-- =========================
-         SEARCH / FILTER
-    ========================== -->
-
+    <!-- SEARCH AND CATEGORY FILTER -->
     <script>
+        const searchInput = document.getElementById("searchInput");
 
-        const searchInput =
-            document.getElementById("searchInput");
+        const appCards = document.querySelectorAll(".app-card");
 
-        const appCards =
-            document.querySelectorAll(".app-card");
+        const categories = document.querySelectorAll(".category");
 
-        const categories =
-            document.querySelectorAll(".category");
+        const noResults = document.getElementById("noResults");
 
-        const noResults =
-            document.getElementById("noResults");
+        const appCount = document.getElementById("appCount");
 
-        const appCount =
-            document.getElementById("appCount");
+        const sectionTitle = document.getElementById("sectionTitle");
 
+        const sectionDescription =
+            document.getElementById("sectionDescription");
 
         let selectedCategory = "all";
 
+        const categoryNames = {
+            all: "All Apps",
+            business: "Business Apps",
+            productivity: "Productivity Apps",
+            utility: "Utility Apps"
+        };
 
         function filterApps() {
-
-            const search =
-                searchInput.value
-                    .toLowerCase()
-                    .trim();
-
+            const search = searchInput.value
+                .toLowerCase()
+                .trim();
 
             let visibleCount = 0;
 
-
             appCards.forEach(card => {
-
-                const name =
-                    card.dataset.name.toLowerCase();
+                const name = (card.dataset.name || "").toLowerCase();
 
                 const category =
-                    card.dataset.category.toLowerCase();
+                    (card.dataset.category || "").toLowerCase();
 
+                const searchableText = (
+                    name + " " +
+                    (card.dataset.search || "") + " " +
+                    card.textContent
+                ).toLowerCase();
 
                 const matchesSearch =
-                    name.includes(search);
-
+                    searchableText.includes(search);
 
                 const matchesCategory =
                     selectedCategory === "all" ||
                     category === selectedCategory;
 
+                const isVisible =
+                    matchesSearch && matchesCategory;
 
-                if (
-                    matchesSearch &&
-                    matchesCategory
-                ) {
+                card.style.display = isVisible ? "flex" : "none";
 
-                    card.style.display = "flex";
-
+                if (isVisible) {
                     visibleCount++;
-
-                } else {
-
-                    card.style.display = "none";
-
                 }
-
             });
 
-
             appCount.textContent =
-                visibleCount +
-                (visibleCount === 1
-                    ? " app"
-                    : " apps");
+                visibleCount + (visibleCount === 1 ? " app" : " apps");
 
+            sectionTitle.textContent =
+                categoryNames[selectedCategory] || "All Apps";
 
-            if (visibleCount === 0) {
+            sectionDescription.textContent = search
+                ? `Search results for "${search}"`
+                : "Explore available applications";
 
-                noResults.style.display = "block";
-
-            } else {
-
-                noResults.style.display = "none";
-
-            }
-
+            noResults.style.display =
+                visibleCount === 0 ? "block" : "none";
         }
 
-
-        searchInput.addEventListener(
-            "input",
-            filterApps
-        );
-
+        searchInput.addEventListener("input", filterApps);
 
         categories.forEach(button => {
+            button.addEventListener("click", () => {
+                categories.forEach(item => {
+                    item.classList.remove("active");
+                });
 
-            button.addEventListener(
-                "click",
-                () => {
+                button.classList.add("active");
 
-                    categories.forEach(item => {
+                selectedCategory = button.dataset.category;
 
-                        item.classList.remove(
-                            "active"
-                        );
-
-                    });
-
-
-                    button.classList.add(
-                        "active"
-                    );
-
-
-                    selectedCategory =
-                        button.dataset.category;
-
-
-                    filterApps();
-
-                }
-            );
-
+                filterApps();
+            });
         });
 
-
+        // Initialize the application count and display.
+        filterApps();
     </script>
 
-
 </body>
-
 </html>

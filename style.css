@@ -1,4 +1,4 @@
-css
+
 /* =========================
    RESET
 ========================= */
@@ -9,9 +9,7 @@ css
     box-sizing: border-box;
 }
 
-
 :root {
-
     --primary: #5E8E4D;
     --primary-hover: #527F44;
 
@@ -22,11 +20,8 @@ css
     --light: #F8FAF7;
 
     --border: #EEEEEE;
-
     --white: #FFFFFF;
-
 }
-
 
 /* =========================
    BODY
@@ -36,9 +31,7 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
-
     font-family:
         Inter,
         -apple-system,
@@ -49,507 +42,309 @@ body {
         sans-serif;
 
     background: var(--light);
-
     color: var(--text);
-
     line-height: 1.5;
-
 }
-
 
 a {
     text-decoration: none;
     color: inherit;
 }
 
-
 button,
 input {
     font-family: inherit;
 }
-
 
 /* =========================
    CONTAINER
 ========================= */
 
 .container {
-
     width: 100%;
-
     max-width: 1180px;
-
     margin: 0 auto;
-
     padding-left: 25px;
     padding-right: 25px;
-
 }
-
 
 /* =========================
    NAVBAR
 ========================= */
 
 .navbar {
-
     height: 70px;
-
     background: var(--white);
-
-    border-bottom:
-        1px solid var(--border);
-
+    border-bottom: 1px solid var(--border);
     position: sticky;
-
     top: 0;
-
     z-index: 1000;
-
 }
 
-
 .navbar-container {
-
     height: 100%;
-
     max-width: 1250px;
-
     margin: 0 auto;
-
     padding: 0 25px;
 
     display: flex;
-
     align-items: center;
-
     gap: 35px;
-
 }
-
 
 /* =========================
    BRAND
 ========================= */
 
 .brand {
-
     display: flex;
-
     align-items: center;
-
     gap: 10px;
 
     font-size: 19px;
-
     font-weight: 700;
-
     color: var(--dark);
-
     white-space: nowrap;
-
 }
 
-
 .brand-icon {
-
     width: 36px;
-
     height: 36px;
-
     border-radius: 9px;
-
     background: var(--primary);
-
     color: white;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     font-size: 17px;
-
     font-weight: 700;
-
 }
-
 
 /* =========================
    SEARCH
 ========================= */
 
 .search-wrapper {
-
     position: relative;
-
     flex: 1;
-
     max-width: 470px;
-
 }
 
-
 .search-wrapper input {
-
     width: 100%;
-
     height: 40px;
 
     border: 1px solid var(--border);
-
     border-radius: 8px;
-
     background: var(--light);
-
     outline: none;
 
-    padding:
-        0 15px 0 40px;
+    padding: 0 15px 0 40px;
 
     color: var(--text);
-
     font-size: 14px;
 
     transition: 0.2s ease;
-
 }
-
 
 .search-wrapper input:focus {
-
     background: white;
+    border-color: rgba(94, 142, 77, 0.5);
 
-    border-color:
-        rgba(94, 142, 77, 0.5);
-
-    box-shadow:
-        0 0 0 3px
+    box-shadow: 0 0 0 3px
         rgba(94, 142, 77, 0.08);
-
 }
-
 
 .search-wrapper input::placeholder {
-
     color: #AAAAAA;
-
 }
-
 
 .search-icon {
-
     position: absolute;
-
     left: 14px;
-
     top: 50%;
-
-    transform:
-        translateY(-50%);
+    transform: translateY(-50%);
 
     color: #999999;
-
     font-size: 19px;
-
 }
-
 
 /* =========================
    NAV LINKS
 ========================= */
 
 .nav-links {
-
     display: flex;
-
     align-items: center;
-
     gap: 25px;
-
     margin-left: auto;
-
 }
-
 
 .nav-links a {
-
     font-size: 14px;
-
     font-weight: 500;
-
     color: var(--muted);
-
     padding: 24px 0;
-
     position: relative;
-
 }
-
 
 .nav-links a:hover {
-
     color: var(--primary);
-
 }
-
 
 .nav-links a.active {
-
     color: var(--primary);
-
 }
 
-
 .nav-links a.active::after {
-
     content: "";
-
     position: absolute;
-
     left: 0;
-
     right: 0;
-
     bottom: 0;
 
     height: 2px;
-
-    background:
-        var(--primary);
-
+    background: var(--primary);
 }
-
 
 /* =========================
    HERO
 ========================= */
 
 .hero {
-
     background: var(--white);
-
-    border-bottom:
-        1px solid var(--border);
-
+    border-bottom: 1px solid var(--border);
 }
-
 
 .hero-container {
-
     max-width: 1180px;
-
     margin: auto;
-
-    padding:
-        55px 25px 50px;
-
+    padding: 55px 25px 50px;
 }
 
-
 .hero-label {
-
     display: inline-block;
 
     color: var(--primary);
-
     font-size: 11px;
-
     font-weight: 700;
-
     letter-spacing: 1px;
 
     margin-bottom: 8px;
-
 }
-
 
 .hero h1 {
-
     font-size: 34px;
-
     line-height: 1.2;
-
     color: var(--dark);
-
     margin-bottom: 10px;
-
 }
-
 
 .hero p {
-
     max-width: 600px;
-
     color: var(--muted);
-
     font-size: 15px;
-
 }
-
 
 /* =========================
    CATEGORIES
 ========================= */
 
 .categories {
-
     background: white;
-
-    border-bottom:
-        1px solid var(--border);
-
+    border-bottom: 1px solid var(--border);
 }
 
-
 .category-list {
-
     display: flex;
-
     align-items: center;
-
     gap: 8px;
 
     padding: 18px 0;
-
     overflow-x: auto;
-
 }
 
-
 .category {
-
     border: 1px solid var(--border);
-
     background: white;
-
     color: var(--muted);
 
     border-radius: 7px;
-
     padding: 8px 15px;
 
     font-size: 13px;
-
     cursor: pointer;
-
     white-space: nowrap;
 
     transition: 0.2s ease;
-
 }
-
 
 .category:hover {
-
-    border-color:
-        rgba(94, 142, 77, 0.35);
-
+    border-color: rgba(94, 142, 77, 0.35);
     color: var(--primary);
-
 }
-
 
 .category.active {
-
     background: var(--primary);
-
-    border-color:
-        var(--primary);
-
+    border-color: var(--primary);
     color: white;
-
 }
-
 
 /* =========================
    APPS SECTION
 ========================= */
 
 .apps-section {
-
-    padding:
-        45px 0 70px;
-
+    padding: 45px 0 70px;
 }
-
 
 .section-header {
-
     display: flex;
-
     align-items: flex-end;
-
     justify-content: space-between;
-
     margin-bottom: 22px;
-
 }
-
 
 .section-header h2 {
-
     color: var(--dark);
-
     font-size: 23px;
-
     margin-bottom: 3px;
-
 }
-
 
 .section-header p {
-
     color: var(--muted);
-
     font-size: 13px;
-
 }
-
 
 .app-count {
-
     color: var(--muted);
-
     font-size: 13px;
-
 }
-
 
 /* =========================
    APP GRID
 ========================= */
 
 .app-grid {
-
     display: grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 18px;
-
+    align-items: stretch;
 }
-
 
 /* =========================
    APP CARD
 ========================= */
 
 .app-card {
-
     background: white;
-
-    border:
-        1px solid var(--border);
-
+    border: 1px solid var(--border);
     border-radius: 12px;
-
     padding: 20px;
 
     display: flex;
-
     flex-direction: column;
 
     min-width: 0;
@@ -557,34 +352,23 @@ input {
     transition:
         transform 0.2s ease,
         box-shadow 0.2s ease;
-
 }
-
 
 .app-card:hover {
-
-    transform:
-        translateY(-2px);
-
-    box-shadow:
-        0 8px 25px
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px
         rgba(0, 0, 0, 0.06);
-
 }
-
 
 /* =========================
    APP CARD TOP
 ========================= */
 
 .app-card-top {
-
     display: flex;
-
+    align-items: flex-start;
     gap: 17px;
-
 }
-
 
 /* =========================
    APP ICON
@@ -596,9 +380,7 @@ input {
     flex-shrink: 0;
 
     border-radius: 16px;
-
     overflow: hidden;
-
     background: #F8FAF7;
 
     display: flex;
@@ -609,231 +391,150 @@ input {
 .app-icon img {
     width: 100%;
     height: 100%;
-
     display: block;
-
     object-fit: cover;
 }
-
 
 /* =========================
    APP INFO
 ========================= */
 
 .app-info {
-
     min-width: 0;
-
 }
-
 
 .app-info h3 {
-
     color: var(--dark);
-
     font-size: 17px;
-
     margin-bottom: 2px;
-
+    overflow-wrap: anywhere;
 }
-
 
 .developer {
-
     color: var(--primary);
-
     font-size: 12px;
-
     font-weight: 500;
-
     margin-bottom: 8px;
-
 }
-
 
 .app-description {
-
     color: var(--muted);
-
     font-size: 13px;
-
     line-height: 1.5;
-
 }
-
 
 /* =========================
    APP DETAILS
 ========================= */
 
 .app-details {
-
     display: flex;
-
-    gap: 18px;
+    flex-wrap: wrap;
+    gap: 10px 18px;
 
     margin-top: 20px;
-
     padding-top: 15px;
 
-    border-top:
-        1px solid #F3F3F3;
-
+    border-top: 1px solid #F3F3F3;
 }
-
 
 .app-details span {
-
     color: #999999;
-
     font-size: 11px;
-
 }
-
 
 /* =========================
    APP FOOTER
 ========================= */
 
 .app-card-footer {
-
     display: flex;
-
     justify-content: flex-end;
 
-    margin-top: 17px;
-
+    margin-top: auto;
+    padding-top: 17px;
 }
 
-
 .download-button {
-
     display: inline-flex;
-
     align-items: center;
-
     justify-content: center;
 
     min-width: 100px;
-
-    padding:
-        9px 17px;
+    padding: 9px 17px;
 
     border-radius: 7px;
-
-    background:
-        var(--primary);
-
+    background: var(--primary);
     color: white;
 
     font-size: 13px;
-
     font-weight: 600;
 
-    transition: 0.2s ease;
-
+    transition: background 0.2s ease;
 }
-
 
 .download-button:hover {
-
-    background:
-        var(--primary-hover);
-
+    background: var(--primary-hover);
 }
-
 
 /* =========================
    NO RESULTS
 ========================= */
 
 .no-results {
-
     display: none;
-
     text-align: center;
-
     padding: 70px 20px;
-
 }
-
 
 .no-results-icon {
-
     font-size: 35px;
-
     margin-bottom: 10px;
-
 }
-
 
 .no-results h3 {
-
     font-size: 18px;
-
     color: var(--dark);
-
     margin-bottom: 5px;
-
 }
-
 
 .no-results p {
-
     color: var(--muted);
-
     font-size: 13px;
-
 }
-
 
 /* =========================
    ABOUT
 ========================= */
 
 .about-section {
-
     background: white;
 
-    border-top:
-        1px solid var(--border);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 
-    border-bottom:
-        1px solid var(--border);
-
-    padding:
-        60px 0;
-
+    padding: 60px 0;
 }
-
 
 .about-content {
-
     max-width: 650px;
-
 }
-
 
 .about-content h2 {
-
     font-size: 25px;
-
     color: var(--dark);
-
     margin-bottom: 10px;
-
 }
-
 
 .about-content p {
-
     color: var(--muted);
-
     font-size: 14px;
-
     line-height: 1.7;
-
 }
+
+/* =========================
+   APP ICON PLACEHOLDER
+========================= */
 
 .app-icon-placeholder {
     width: 100%;
@@ -843,223 +544,132 @@ input {
     align-items: center;
     justify-content: center;
 
-    background: #5E8E4D;
-    color: #FFFFFF;
+    background: var(--primary);
+    color: var(--white);
 
     font-size: 20px;
     font-weight: 700;
-
     letter-spacing: 0.5px;
 }
-
 
 /* =========================
    FOOTER
 ========================= */
 
 footer {
-
     background: white;
-
-    padding:
-        25px 0;
-
+    padding: 25px 0;
 }
 
-
 .footer-content {
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
 
     color: #A5A5A5;
-
     font-size: 12px;
-
 }
-
 
 /* =========================
    TABLET
 ========================= */
 
 @media (max-width: 850px) {
-
     .navbar-container {
-
         gap: 18px;
-
     }
-
 
     .nav-links {
-
         gap: 15px;
-
     }
-
 
     .app-grid {
-
-        grid-template-columns:
-            1fr;
-
+        grid-template-columns: 1fr;
     }
-
 }
-
 
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 650px) {
-
     .navbar {
-
         height: auto;
-
     }
-
 
     .navbar-container {
-
         min-height: 70px;
-
         flex-wrap: wrap;
-
-        padding:
-            12px 20px;
-
+        padding: 12px 20px;
     }
-
 
     .brand {
-
         flex: 1;
-
     }
-
 
     .search-wrapper {
-
         order: 3;
-
         flex-basis: 100%;
-
         max-width: none;
-
     }
-
 
     .nav-links {
-
         margin-left: 0;
-
     }
-
 
     .nav-links a {
-
-        padding:
-            10px 0;
-
+        padding: 10px 0;
     }
-
 
     .nav-links a.active::after {
-
         display: none;
-
     }
-
 
     .hero-container {
-
-        padding:
-            40px 20px;
-
+        padding: 40px 20px;
     }
-
 
     .hero h1 {
-
         font-size: 28px;
-
     }
-
 
     .container {
-
-        padding:
-            0 20px;
-
+        padding: 0 20px;
     }
-
 
     .apps-section {
-
         padding-top: 35px;
-
     }
-
 
     .section-header {
-
         align-items: flex-start;
-
+        gap: 12px;
     }
-
 
     .app-card {
-
         padding: 17px;
-
     }
-
 
     .app-card-top {
-
         gap: 13px;
-
     }
-
 
     .app-icon {
-
         width: 70px;
-
         height: 70px;
-
         border-radius: 14px;
-
     }
-
 
     .app-info h3 {
-
         font-size: 16px;
-
     }
-
 
     .app-description {
-
         font-size: 12px;
-
     }
-
 
     .footer-content {
-
         flex-direction: column;
-
         gap: 5px;
-
     }
-
 }
-

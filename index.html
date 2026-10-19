@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +11,7 @@
 
     <meta
         name="description"
-        content="Browse and download Android applications, including Restaurant POS and PRMS."
+        content="Browse and download Android applications, including Restaurant POS, Pickle, and Pos Ayungon."
     >
 
     <link rel="stylesheet" href="style.css">
@@ -29,7 +30,7 @@
 
             <!-- SEARCH -->
             <div class="search-wrapper">
-                <span class="search-icon">⌕</span>
+                <span class="search-icon" aria-hidden="true">⌕</span>
 
                 <input
                     type="text"
@@ -72,6 +73,7 @@
                 <div class="category-list">
 
                     <button
+                        type="button"
                         class="category active"
                         data-category="all"
                     >
@@ -79,6 +81,7 @@
                     </button>
 
                     <button
+                        type="button"
                         class="category"
                         data-category="business"
                     >
@@ -86,6 +89,7 @@
                     </button>
 
                     <button
+                        type="button"
                         class="category"
                         data-category="productivity"
                     >
@@ -93,6 +97,7 @@
                     </button>
 
                     <button
+                        type="button"
                         class="category"
                         data-category="utility"
                     >
@@ -117,7 +122,7 @@
                     </div>
 
                     <span class="app-count" id="appCount">
-                        2 apps
+                        3 apps
                     </span>
                 </div>
 
@@ -145,10 +150,6 @@
                             <div class="app-info">
                                 <h3>Restaurant POS</h3>
 
-                                <p class="developer">
-                                    Sir Elbert
-                                </p>
-
                                 <p class="app-description">
                                     A restaurant point-of-sale system
                                     featuring product management, sales,
@@ -165,23 +166,25 @@
                         </div>
 
                         <div class="app-card-footer">
-                            <a
-                                href="Pos.apk"
+                            <button
+                                type="button"
                                 class="download-button"
-                                download="Pos.apk"
+                                data-file="Pos.apk"
+                                data-app="Restaurant POS"
+                                data-password="poselbert@2026"
                             >
                                 Download
-                            </a>
+                            </button>
                         </div>
 
                     </article>
 
-                    <!-- PRMS -->
+                    <!-- PICKLE -->
                     <article
                         class="app-card"
                         data-category="business"
-                        data-name="PRMS"
-                        data-search="prms patient record management system patient records appointments healthcare medical consultation diagnosis treatment"
+                        data-name="Pickle"
+                        data-search="pickle pickleball court reservation booking player reservations schedules payments reservation reports court management"
                     >
 
                         <div class="app-card-top">
@@ -189,7 +192,7 @@
                             <div class="app-icon">
                                 <img
                                     src="logo/logo2.png"
-                                    alt="PRMS app icon"
+                                    alt="Pickle app icon"
                                     loading="lazy"
                                 >
                             </div>
@@ -197,15 +200,12 @@
                             <div class="app-info">
                                 <h3>Pickle</h3>
 
-                                <p class="developer">
-                                   
-                                </p>
-
-                               
                                 <p class="app-description">
-                                    A pickleball court reservation management system
-                                    designed to manage court bookings, player reservations,
-                                    schedules, payments, and reservation reports.
+                                    A pickleball court reservation
+                                    management system designed to manage
+                                    court bookings, player reservations,
+                                    schedules, payments, and reservation
+                                    reports.
                                 </p>
                             </div>
 
@@ -218,13 +218,66 @@
                         </div>
 
                         <div class="app-card-footer">
-                            <a
-                                href="Prms.apk"
+                            <button
+                                type="button"
                                 class="download-button"
-                                download="Prms.apk"
+                                data-file="Prms.apk"
+                                data-app="Pickle"
+                                data-password="pickleelbert@2026"
                             >
                                 Download
-                            </a>
+                            </button>
+                        </div>
+
+                    </article>
+
+                    <!-- POS AYUNGON -->
+                    <article
+                        class="app-card"
+                        data-category="business"
+                        data-name="Pos Ayungon"
+                        data-search="pos ayungon point of sale sales inventory products orders reports cashier business management"
+                    >
+
+                        <div class="app-card-top">
+
+                            <div class="app-icon">
+                                <img
+                                    src="logo/logo.png"
+                                    alt="Pos Ayungon app icon"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <div class="app-info">
+                                <h3>Pos Ayungon</h3>
+
+                                <p class="app-description">
+                                    A point-of-sale application designed
+                                    to support sales transactions,
+                                    product management, inventory,
+                                    and business operations.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="app-details">
+                            <span>Version 1.0.0</span>
+                            <span>Android 8.0+</span>
+                            <span>APK</span>
+                        </div>
+
+                        <div class="app-card-footer">
+                            <button
+                                type="button"
+                                class="download-button"
+                                data-file="Pos_ayungon.apk"
+                                data-app="Pos Ayungon"
+                                data-password="posayungon@2026"
+                            >
+                                Download
+                            </button>
                         </div>
 
                     </article>
@@ -233,7 +286,7 @@
 
                 <!-- NO RESULTS -->
                 <div class="no-results" id="noResults">
-                    <div class="no-results-icon">🔍</div>
+                    <div class="no-results-icon" aria-hidden="true">🔍</div>
 
                     <h3>No apps found</h3>
 
@@ -282,8 +335,136 @@
         </div>
     </footer>
 
-    <!-- SEARCH AND CATEGORY FILTER -->
+    <!-- PASSWORD MODAL -->
+    <div
+        class="password-modal"
+        id="passwordModal"
+        aria-hidden="true"
+        inert
+    >
+        <div class="password-modal-backdrop" data-close-modal></div>
+
+        <section
+            class="password-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+            aria-describedby="modalDescription"
+            tabindex="-1"
+        >
+
+            <!-- CLOSE BUTTON -->
+            <button
+                type="button"
+                class="modal-close"
+                id="closeModal"
+                aria-label="Close password dialog"
+            >
+                &times;
+            </button>
+
+            <!-- LOCK ICON -->
+            <div class="password-modal-icon" aria-hidden="true">
+                <svg
+                    viewBox="0 0 24 24"
+                    width="28"
+                    height="28"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <rect x="4" y="10" width="16" height="11" rx="2"></rect>
+                    <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+                    <path d="M12 14v3"></path>
+                </svg>
+            </div>
+
+            <h2 id="modalTitle">Password Required</h2>
+
+            <p id="modalDescription" class="modal-description">
+                Enter the password to download this application.
+            </p>
+
+            <p class="selected-app-name" id="selectedAppName">
+                Application
+            </p>
+
+            <!-- PASSWORD FORM -->
+            <form id="passwordForm">
+
+                <label for="downloadPassword">
+                    Download password
+                </label>
+
+                <div class="password-input-wrapper">
+
+                    <input
+                        type="password"
+                        id="downloadPassword"
+                        name="downloadPassword"
+                        placeholder="Enter password"
+                        autocomplete="off"
+                        required
+                        aria-describedby="passwordError"
+                    >
+
+                    <button
+                        type="button"
+                        class="toggle-password"
+                        id="togglePassword"
+                        aria-label="Show password"
+                        aria-pressed="false"
+                    >
+                        Show
+                    </button>
+
+                </div>
+
+                <p
+                    class="password-error"
+                    id="passwordError"
+                    role="alert"
+                    aria-live="polite"
+                ></p>
+
+                <div class="modal-actions">
+
+                    <button
+                        type="button"
+                        class="cancel-button"
+                        id="cancelDownload"
+                    >
+                        Cancel
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="unlock-button"
+                        id="unlockButton"
+                    >
+                        Unlock &amp; Download
+                    </button>
+
+                </div>
+
+            </form>
+
+            <p class="password-hint">
+                <span aria-hidden="true">🔒</span>
+                Password required for each application
+            </p>
+
+        </section>
+    </div>
+
+    <!-- SEARCH, CATEGORY FILTER, AND PASSWORD MODAL -->
     <script>
+        // =========================================================
+        // SEARCH AND CATEGORY FILTER
+        // =========================================================
+
         const searchInput = document.getElementById("searchInput");
 
         const appCards = document.querySelectorAll(".app-card");
@@ -309,9 +490,7 @@
         };
 
         function filterApps() {
-            const search = searchInput.value
-                .toLowerCase()
-                .trim();
+            const search = searchInput.value.toLowerCase().trim();
 
             let visibleCount = 0;
 
@@ -327,15 +506,13 @@
                     card.textContent
                 ).toLowerCase();
 
-                const matchesSearch =
-                    searchableText.includes(search);
+                const matchesSearch = searchableText.includes(search);
 
                 const matchesCategory =
                     selectedCategory === "all" ||
                     category === selectedCategory;
 
-                const isVisible =
-                    matchesSearch && matchesCategory;
+                const isVisible = matchesSearch && matchesCategory;
 
                 card.style.display = isVisible ? "flex" : "none";
 
@@ -372,6 +549,234 @@
 
                 filterApps();
             });
+        });
+
+        // =========================================================
+        // PASSWORD MODAL
+        // =========================================================
+
+        const passwordModal =
+            document.getElementById("passwordModal");
+
+        const passwordDialog =
+            passwordModal.querySelector(".password-dialog");
+
+        const passwordForm =
+            document.getElementById("passwordForm");
+
+        const downloadPassword =
+            document.getElementById("downloadPassword");
+
+        const passwordError =
+            document.getElementById("passwordError");
+
+        const selectedAppName =
+            document.getElementById("selectedAppName");
+
+        const closeModalButton =
+            document.getElementById("closeModal");
+
+        const cancelDownloadButton =
+            document.getElementById("cancelDownload");
+
+        const togglePasswordButton =
+            document.getElementById("togglePassword");
+
+        const unlockButton =
+            document.getElementById("unlockButton");
+
+        let selectedDownload = null;
+
+        let previousFocusedElement = null;
+
+        // Open the modal for the selected application.
+        function openPasswordModal(button) {
+            selectedDownload = {
+                file: button.dataset.file,
+                app: button.dataset.app,
+                password: button.dataset.password
+            };
+
+            previousFocusedElement = button;
+
+            selectedAppName.textContent = selectedDownload.app;
+
+            downloadPassword.value = "";
+            downloadPassword.type = "password";
+
+            passwordError.textContent = "";
+            passwordError.classList.remove("visible");
+
+            togglePasswordButton.textContent = "Show";
+            togglePasswordButton.setAttribute(
+                "aria-label",
+                "Show password"
+            );
+            togglePasswordButton.setAttribute("aria-pressed", "false");
+
+            unlockButton.disabled = false;
+            unlockButton.textContent = "Unlock & Download";
+
+            passwordModal.classList.add("open");
+            passwordModal.removeAttribute("inert");
+            passwordModal.setAttribute("aria-hidden", "false");
+
+            document.body.classList.add("modal-open");
+
+            downloadPassword.focus();
+        }
+
+        // Close the modal and restore focus.
+        function closePasswordModal() {
+            passwordModal.classList.remove("open");
+            passwordModal.setAttribute("aria-hidden", "true");
+            passwordModal.setAttribute("inert", "");
+
+            document.body.classList.remove("modal-open");
+
+            passwordForm.reset();
+
+            passwordError.textContent = "";
+            passwordError.classList.remove("visible");
+
+            selectedDownload = null;
+
+            if (previousFocusedElement) {
+                previousFocusedElement.focus();
+            }
+        }
+
+        // Attach the modal to every download button.
+        document.querySelectorAll(".download-button").forEach(button => {
+            button.addEventListener("click", () => {
+                openPasswordModal(button);
+            });
+        });
+
+        // Close using the close button.
+        closeModalButton.addEventListener("click", closePasswordModal);
+
+        // Close using the Cancel button.
+        cancelDownloadButton.addEventListener(
+            "click",
+            closePasswordModal
+        );
+
+        // Close when clicking the backdrop.
+        passwordModal.querySelectorAll("[data-close-modal]").forEach(
+            backdrop => {
+                backdrop.addEventListener(
+                    "click",
+                    closePasswordModal
+                );
+            }
+        );
+
+        // Close using the Escape key and keep keyboard focus in the dialog.
+        document.addEventListener("keydown", event => {
+            if (!passwordModal.classList.contains("open")) {
+                return;
+            }
+
+            if (event.key === "Escape") {
+                event.preventDefault();
+                closePasswordModal();
+                return;
+            }
+
+            if (event.key === "Tab") {
+                const focusableElements = [
+                    downloadPassword,
+                    togglePasswordButton,
+                    cancelDownloadButton,
+                    unlockButton,
+                    closeModalButton
+                ];
+
+                const firstElement = focusableElements[0];
+                const lastElement =
+                    focusableElements[focusableElements.length - 1];
+
+                if (
+                    event.shiftKey &&
+                    document.activeElement === firstElement
+                ) {
+                    event.preventDefault();
+                    lastElement.focus();
+                } else if (
+                    !event.shiftKey &&
+                    document.activeElement === lastElement
+                ) {
+                    event.preventDefault();
+                    firstElement.focus();
+                }
+            }
+        });
+
+        // Show or hide the password.
+        togglePasswordButton.addEventListener("click", () => {
+            const isPasswordHidden =
+                downloadPassword.type === "password";
+
+            downloadPassword.type =
+                isPasswordHidden ? "text" : "password";
+
+            togglePasswordButton.textContent =
+                isPasswordHidden ? "Hide" : "Show";
+
+            togglePasswordButton.setAttribute(
+                "aria-label",
+                isPasswordHidden ? "Hide password" : "Show password"
+            );
+
+            togglePasswordButton.setAttribute(
+                "aria-pressed",
+                String(isPasswordHidden)
+            );
+
+            downloadPassword.focus();
+        });
+
+        // Validate the password and initiate the download.
+        passwordForm.addEventListener("submit", event => {
+            event.preventDefault();
+
+            if (!selectedDownload) {
+                return;
+            }
+
+            const enteredPassword = downloadPassword.value;
+
+            if (enteredPassword !== selectedDownload.password) {
+                passwordError.textContent =
+                    "Incorrect password. Please try again.";
+
+                passwordError.classList.add("visible");
+
+                downloadPassword.focus();
+                downloadPassword.select();
+
+                return;
+            }
+
+            // Verify that the selected APK path is available.
+            const fileToDownload = selectedDownload.file;
+
+            const downloadLink = document.createElement("a");
+
+            downloadLink.href = fileToDownload;
+            downloadLink.download = fileToDownload;
+            downloadLink.style.display = "none";
+
+            document.body.appendChild(downloadLink);
+
+            // Start the browser download.
+            downloadLink.click();
+
+            downloadLink.remove();
+
+            // Close the modal after the download is initiated.
+            closePasswordModal();
         });
 
         // Initialize the application count and display.
